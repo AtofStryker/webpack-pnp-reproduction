@@ -1,0 +1,11 @@
+{
+  "name": "pnp-directory",
+  "version": "1.0.0",
+  "description": "a sample project using yarn PnP with a target file that is going to be compiled by webpack that lives in a different directory",
+  "packageManager": "yarn@4.1.1",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axe-core": "^4.9.1"
+  }
+}
