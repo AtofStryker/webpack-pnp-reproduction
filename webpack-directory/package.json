@@ -8,6 +8,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "webpack": "^5.93.0"
+    "webpack": "^4.47.0",
+    "pnp-webpack-plugin": "1.7.0"
   }
 }

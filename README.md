@@ -20,11 +20,15 @@ There is a file, called `target_file.js` that includes an import from `axe-core`
 
 ### webpack-directory
 
-`cd` into the `webpack-directory` and install the dependencies via `npm install`. This repository does NOt use `yarn PnP`.
+`cd` into the `webpack-directory` and install the dependencies via `npm install`. This repository does NOT use `yarn PnP`.
 
 ## Reproduction
 
-To reproduce, run the `npm run compile` script from the `webpack-directory`. This will run the `webpack` compiler from the node context with a very simple config/options to compile the `target_file` found in the `pnp-directory`. Notice the error
+To reproduce, run the `yarn compile` script from the `pnp-directory`. This will run the `webpack` compiler in the `webpack-directory`.
+
+With webpack 4, it uses the `pnp-webpack-plugin` to discover the pnp process and pass into webpack. This works and is able to discover `axe-core`.
+
+With webpack 5, this fails to work.
 
 ```sh
 "Module not found: Error: Can't resolve 'axe-core' in ...
