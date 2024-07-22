@@ -4,7 +4,7 @@ const webpack = require("webpack");
 const addYarnPnpConfig = (file, options) => {
   const { makeResolver } = require('pnp-webpack-plugin/resolver')
   const findPnpApi = require('module').findPnpApi
-  
+
   // console.log(makeResolver)
   // console.log(findPnpApi)
   // console.log(file)
@@ -39,7 +39,7 @@ const webpackOptions = {
 
 if (process.versions.pnp) {
   // pnp path
-  addYarnPnpConfig(entry, webpackOptions)
+  // addYarnPnpConfig(entry, webpackOptions)
 }
 
 console.log(webpackOptions);
